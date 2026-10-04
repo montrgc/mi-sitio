@@ -1,12 +1,12 @@
 /**
  * Configuración y variables de la aplicación Mi Negocio Móvil
- * Estructura modular por aplicación de MontyTech - CMTech
+ * Estructura modular por aplicación de MontyTech - CMTech (Startup & Desarrollo Independiente)
  */
 const MI_NEGOCIO_MOVIL_CONFIG = {
     id: 'mi-negocio-movil',
     name: 'Mi Negocio Móvil',
     category: 'Productividad & Gestión (Android)',
-    badge: '📱 Productividad & P2P',
+    badge: '<i class="fa-solid fa-mobile-screen-button"></i> Productividad & P2P',
     badgeClass: 'badge-android',
     version: 'Versión 1.0.0 (Build 1)',
     targetSdk: 'API Level 35 (Android 15)',
@@ -15,6 +15,6 @@ const MI_NEGOCIO_MOVIL_CONFIG = {
     directApkUrl: 'https://montytech.com/downloads/mi-negocio-movil.apk',
     policyPath: 'politicas/mi-negocio-movil/index.html',
     description: 'Suite de gestión comercial y ventas offline-first con sincronización P2P en red local.',
-    company: 'MontyTech - CMTech',
+    company: 'MontyTech - CMTech (Startup & Desarrollo Independiente)',
     lastUpdated: 'Octubre 2026'
 };
