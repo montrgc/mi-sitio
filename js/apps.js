@@ -1,14 +1,13 @@
 /**
  * Configuración dinámica de Aplicaciones Android, Enlaces de Descarga y Copia de Rutas
- * 
- * Puedes agregar o modificar fácilmente las aplicaciones editando este array.
+ * Utiliza Font Awesome 6 para renderizado de íconos vectoriales oficiales.
  */
 const APPS_CONFIG = [
     {
         id: 'poker-local',
         title: 'Poker Local — Texas Hold\'em',
         category: 'Juegos & Entretenimiento (Android)',
-        badge: '♠️ Juego & Criptografía',
+        badge: '<i class="fa-solid fa-gamepad"></i> Juego & Criptografía',
         badgeClass: 'badge-legal',
         version: 'Versión 1.0.2 (Build 3)',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.pokerlocal.app',
@@ -20,13 +19,12 @@ const APPS_CONFIG = [
         id: 'mi-negocio-movil',
         title: 'Mi Negocio Móvil',
         category: 'Productividad & Gestión (Android)',
-        badge: '📱 Productividad & P2P',
+        badge: '<i class="fa-solid fa-mobile-screen-button"></i> Productividad & P2P',
         badgeClass: 'badge-android',
         version: 'Versión 1.0.0 (Build 1)',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.minegociomovil.app',
         directApkUrl: 'https://montytech.com/downloads/mi-negocio-movil.apk',
         policyUrl: 'politicas/mi-negocio-movil/index.html',
-
         description: 'Suite de gestión comercial y ventas offline-first con sincronización P2P en red local.'
     }
 ];
@@ -52,7 +50,7 @@ function copyToClipboard(text, customMessage) {
 }
 
 /**
- * Notificación Toast flotante
+ * Notificación Toast flotante con ícono vectorial Font Awesome
  */
 function showToast(message) {
     let toast = document.getElementById('toast-notification');
@@ -63,7 +61,7 @@ function showToast(message) {
         document.body.appendChild(toast);
     }
     
-    toast.innerHTML = `✨ ${message}`;
+    toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${message}`;
     toast.classList.add('show');
     
     setTimeout(() => {
@@ -89,18 +87,18 @@ function renderAppCards(containerSelector = '#apps-container') {
             <div class="policy-meta">${app.category}</div>
             <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.2rem;">${app.description}</p>
             
-            <!-- Botones de Acción: Descarga y Copiar Ruta -->
+            <!-- Botones de Acción Vectoriales: Descarga y Copiar Ruta -->
             <div class="app-actions-group">
                 <a href="${app.playStoreUrl}" target="_blank" rel="noopener" class="btn-primary-sm btn-download">
-                    <span>📲 Google Play Store</span>
+                    <span><i class="fa-brands fa-google-play"></i> Google Play Store</span>
                 </a>
                 
                 <button type="button" class="btn-secondary-sm btn-copy" onclick="copyToClipboard('${app.playStoreUrl}', 'Ruta de Google Play copiada')">
-                    <span>📋 Copiar Ruta App</span>
+                    <span><i class="fa-regular fa-copy"></i> Copiar Ruta App</span>
                 </button>
 
                 <a href="${app.policyUrl}" class="btn-link-sm">
-                    <span>📜 Ver Políticas →</span>
+                    <span><i class="fa-solid fa-shield-halved"></i> Ver Políticas <i class="fa-solid fa-arrow-right"></i></span>
                 </a>
             </div>
 
@@ -109,7 +107,7 @@ function renderAppCards(containerSelector = '#apps-container') {
                 <span class="copy-label">Ruta / ID de App:</span>
                 <input type="text" readonly value="${app.playStoreUrl}" class="copy-input" id="path-input-${app.id}">
                 <button type="button" class="btn-copy-icon" onclick="copyToClipboard('${app.playStoreUrl}', 'Ruta copiada')" title="Copiar ruta">
-                    📋
+                    <i class="fa-regular fa-copy"></i> Copiar
                 </button>
             </div>
         </div>

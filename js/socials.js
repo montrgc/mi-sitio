@@ -1,8 +1,6 @@
 /**
  * Configuración dinámica de Redes Sociales de MontyTech - CMTech
- * 
- * Puedes agregar o modificar fácilmente canales sociales agregando nuevos objetos
- * a este array. La página web renderizará los botones y enlaces automáticamente.
+ * Usa Font Awesome 6 para renderizado vectorial estándar de alta calidad.
  */
 const SOCIAL_NETWORKS = [
     {
@@ -10,7 +8,7 @@ const SOCIAL_NETWORKS = [
         name: 'Facebook',
         handle: 'MontyTech Oficial',
         url: 'https://www.facebook.com/profile.php?id=61590884992555',
-        icon: '📘',
+        iconClass: 'fa-brands fa-facebook-f',
         badge: 'Comunidad Oficial',
         description: 'Sigue nuestras noticias, actualizaciones y lanzamientos oficiales.'
     },
@@ -19,7 +17,7 @@ const SOCIAL_NETWORKS = [
         name: 'TikTok',
         handle: '@tonimontech',
         url: 'https://www.tiktok.com/@tonimontech?lang=es',
-        icon: '🎵',
+        iconClass: 'fa-brands fa-tiktok',
         badge: 'Videos & Tech',
         description: 'Contenido dinámico sobre tecnología, demos y desarrollo de software.'
     },
@@ -28,7 +26,7 @@ const SOCIAL_NETWORKS = [
         name: 'YouTube',
         handle: '@ToniMonTech',
         url: 'https://www.youtube.com/@ToniMonTech',
-        icon: '▶️',
+        iconClass: 'fa-brands fa-youtube',
         badge: 'Canal de Video',
         description: 'Tutoriales, demos de aplicaciones Android y presentaciones de proyectos.'
     },
@@ -37,7 +35,7 @@ const SOCIAL_NETWORKS = [
         name: 'Instagram',
         handle: '@tonimontech',
         url: 'https://www.instagram.com/tonimontech/',
-        icon: '📸',
+        iconClass: 'fa-brands fa-instagram',
         badge: 'Nuestra Marca',
         description: 'Detrás de escenas, eventos y comunidad de desarrollo.'
     }
@@ -51,7 +49,7 @@ function renderSocialNetworks(containerSelector = '#social-container') {
     const htmlContent = SOCIAL_NETWORKS.map(social => `
         <a href="${social.url}" target="_blank" rel="noopener noreferrer" class="social-card glass-card slide-up">
             <div class="social-card-header">
-                <span class="social-icon">${social.icon}</span>
+                <span class="social-icon"><i class="${social.iconClass}"></i></span>
                 <span class="social-badge">${social.badge}</span>
             </div>
             <div class="social-card-body">
@@ -61,7 +59,7 @@ function renderSocialNetworks(containerSelector = '#social-container') {
             </div>
             <div class="social-card-footer">
                 <span>Seguir canal</span>
-                <span class="arrow">→</span>
+                <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
             </div>
         </a>
     `).join('');
