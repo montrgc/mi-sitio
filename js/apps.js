@@ -77,7 +77,7 @@ function renderAppCards(containerSelector = '#apps-container') {
     if (!container) return;
 
     const htmlContent = APPS_CONFIG.map(app => `
-        <div class="policy-card glass-card slide-up">
+        <div class="policy-card glass-card slide-up visible">
             <div class="app-card-header">
                 <span class="policy-badge ${app.badgeClass}">${app.badge}</span>
                 <span class="app-version-tag">${app.version}</span>

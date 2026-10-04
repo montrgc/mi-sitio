@@ -47,7 +47,7 @@ function renderSocialNetworks(containerSelector = '#social-container') {
     if (!containers || containers.length === 0) return;
 
     const htmlContent = SOCIAL_NETWORKS.map(social => `
-        <a href="${social.url}" target="_blank" rel="noopener noreferrer" class="social-card glass-card slide-up">
+        <a href="${social.url}" target="_blank" rel="noopener noreferrer" class="social-card glass-card slide-up visible">
             <div class="social-card-header">
                 <span class="social-icon"><i class="${social.iconClass}"></i></span>
                 <span class="social-badge">${social.badge}</span>

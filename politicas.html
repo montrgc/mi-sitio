@@ -24,8 +24,78 @@
             <p>Descarga nuestras aplicaciones oficiales para Android, copia las rutas directas de publicación y conoce nuestras políticas de privacidad y protección legal.</p>
         </div>
 
-        <!-- Contenedor dinámico de tarjetas de apps con descargas y copia de ruta -->
-        <div id="apps-container" class="policy-grid"></div>
+        <!-- Tarjetas de Apps con Descargas y Copia de Rutas -->
+        <div id="apps-container" class="policy-grid">
+            
+            <!-- App 1: Poker Local -->
+            <div class="policy-card glass-card slide-up visible">
+                <div class="app-card-header">
+                    <span class="policy-badge badge-legal"><i class="fa-solid fa-gamepad"></i> Juego & Criptografía</span>
+                    <span class="app-version-tag">Versión 1.0.2 (Build 3)</span>
+                </div>
+                
+                <h2>Poker Local — Texas Hold'em</h2>
+                <div class="policy-meta">Juegos & Entretenimiento (Android)</div>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.2rem;">Juego de póquer Texas Hold'em para Android con modo Historia vs IA y multijugador LAN sin servidores externos.</p>
+                
+                <div class="app-actions-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.pokerlocal.app" target="_blank" rel="noopener" class="btn-primary-sm btn-download">
+                        <span><i class="fa-brands fa-google-play"></i> Google Play Store</span>
+                    </a>
+                    
+                    <button type="button" class="btn-secondary-sm btn-copy" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.pokerlocal.app', 'Ruta de Google Play copiada')">
+                        <span><i class="fa-regular fa-copy"></i> Copiar Ruta App</span>
+                    </button>
+
+                    <a href="politicas/poker-local/index.html" class="btn-link-sm">
+                        <span><i class="fa-solid fa-shield-halved"></i> Ver Políticas <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+
+                <div class="copy-path-box">
+                    <span class="copy-label">Ruta / ID de App:</span>
+                    <input type="text" readonly value="https://play.google.com/store/apps/details?id=com.pokerlocal.app" class="copy-input" id="path-input-poker">
+                    <button type="button" class="btn-copy-icon" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.pokerlocal.app', 'Ruta copiada')" title="Copiar ruta">
+                        <i class="fa-regular fa-copy"></i> Copiar
+                    </button>
+                </div>
+            </div>
+
+            <!-- App 2: Mi Negocio Móvil -->
+            <div class="policy-card glass-card slide-up visible">
+                <div class="app-card-header">
+                    <span class="policy-badge badge-android"><i class="fa-solid fa-mobile-screen-button"></i> Productividad & P2P</span>
+                    <span class="app-version-tag">Versión 1.0.0 (Build 1)</span>
+                </div>
+                
+                <h2>Mi Negocio Móvil</h2>
+                <div class="policy-meta">Productividad & Gestión (Android)</div>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.2rem;">Suite de gestión comercial y ventas offline-first con sincronización P2P en red local.</p>
+                
+                <div class="app-actions-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.minegociomovil.app" target="_blank" rel="noopener" class="btn-primary-sm btn-download">
+                        <span><i class="fa-brands fa-google-play"></i> Google Play Store</span>
+                    </a>
+                    
+                    <button type="button" class="btn-secondary-sm btn-copy" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.minegociomovil.app', 'Ruta de Google Play copiada')">
+                        <span><i class="fa-regular fa-copy"></i> Copiar Ruta App</span>
+                    </button>
+
+                    <a href="politicas/mi-negocio-movil/index.html" class="btn-link-sm">
+                        <span><i class="fa-solid fa-shield-halved"></i> Ver Políticas <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+
+                <div class="copy-path-box">
+                    <span class="copy-label">Ruta / ID de App:</span>
+                    <input type="text" readonly value="https://play.google.com/store/apps/details?id=com.minegociomovil.app" class="copy-input" id="path-input-negocio">
+                    <button type="button" class="btn-copy-icon" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.minegociomovil.app', 'Ruta copiada')" title="Copiar ruta">
+                        <i class="fa-regular fa-copy"></i> Copiar
+                    </button>
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <footer class="footer glass">
@@ -38,12 +108,5 @@
     <script src="js/apps.js"></script>
     <script src="js/socials.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (typeof renderAppCards === 'function') {
-                renderAppCards('#apps-container');
-            }
-        });
-    </script>
 </body>
 </html>
