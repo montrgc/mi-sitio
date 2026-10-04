@@ -33,6 +33,32 @@
                         <strong>📌 Resumen Ejecutivo de Transparencia:</strong> Poker Local es una aplicación de póquer de entretenimiento social para Android. No requiere registro en la nube, almacena el progreso localmente, no realiza apuestas con dinero real y utiliza cifrado criptográfico avanzado para garantizar partidas limpias y transparentes.
                     </div>
 
+                    <!-- Caja de Descarga de App y Copiar Ruta -->
+                    <div class="legal-callout" style="border-left-color: var(--primary); background: rgba(138, 43, 226, 0.1);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
+                            <strong style="color: #fff; font-size: 1.05rem;">📲 Descargar Aplicación Oficial (Poker Local):</strong>
+                            <span class="app-version-tag">Versión 1.0.2 (Build 3)</span>
+                        </div>
+                        
+                        <div class="app-actions-group" style="margin-top: 0.5rem; margin-bottom: 0.8rem;">
+                            <a href="https://play.google.com/store/apps/details?id=com.pokerlocal.app" target="_blank" rel="noopener" class="btn-primary-sm">
+                                📱 Descargar en Google Play
+                            </a>
+                            <button type="button" class="btn-secondary-sm" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.pokerlocal.app', 'Ruta de Poker Local copiada')">
+                                📋 Copiar Ruta de Descarga
+                            </button>
+                        </div>
+
+                        <div class="copy-path-box">
+                            <span class="copy-label">Ruta Oficial / ID:</span>
+                            <input type="text" readonly value="https://play.google.com/store/apps/details?id=com.pokerlocal.app" class="copy-input" id="path-input-poker">
+                            <button type="button" class="btn-copy-icon" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.pokerlocal.app', 'Ruta copiada')" title="Copiar ruta">
+                                📋 Copiar
+                            </button>
+                        </div>
+                    </div>
+
+
                     <h2 class="policy-section-title">1. Identificación del Desarrollador y Aceptación de Términos</h2>
                     <p>Las presentes Políticas de Privacidad, Avisos Legales y Términos de Uso (en adelante, "los Términos") rigen el acceso, descarga, instalación y uso de la aplicación móvil para Android denominada <strong>Poker Local — Texas Hold'em</strong> (en adelante, "la Aplicación"), creada, desarrollada, de propiedad exclusiva y operada por <strong>MontyTech - CMTech</strong>, junto a sus desarrolladores fundadores y equipo técnico (en adelante, "la Empresa", "nosotros" o "el Desarrollador").</p>
                     <p>Al descargar, instalar o utilizar la Aplicación, el usuario (en adelante, "el Usuario") declara ser mayor de edad en su jurisdicción correspondiente y acepta de manera expresa, voluntaria, incondicional e irrevocable la totalidad de las cláusulas contenidas en este documento legal.</p>
@@ -102,6 +128,8 @@
             <p>&copy; 2026 MontyTech - CMTech. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../js/apps.js"></script>
     <script src="../js/main.js"></script>
 </body>
+
 </html>

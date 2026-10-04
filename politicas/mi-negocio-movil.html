@@ -28,7 +28,33 @@
             <article class="policy-card glass-card slide-up">
                 <div class="policy-meta">Última actualización: Octubre 2026 • Versión Oficial de la Política</div>
                 <div class="policy-text">
+                    <!-- Caja de Descarga de App y Copiar Ruta -->
+                    <div class="legal-callout" style="border-left-color: var(--secondary); background: rgba(0, 229, 255, 0.08); margin-bottom: 1.5rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
+                            <strong style="color: #fff; font-size: 1.05rem;">📲 Descargar Aplicación Oficial (Mi Negocio Móvil):</strong>
+                            <span class="app-version-tag">Versión 1.0.0 (Build 1)</span>
+                        </div>
+                        
+                        <div class="app-actions-group" style="margin-top: 0.5rem; margin-bottom: 0.8rem;">
+                            <a href="https://play.google.com/store/apps/details?id=com.minegociomovil.app" target="_blank" rel="noopener" class="btn-primary-sm">
+                                📱 Descargar en Google Play
+                            </a>
+                            <button type="button" class="btn-secondary-sm" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.minegociomovil.app', 'Ruta de Mi Negocio Móvil copiada')">
+                                📋 Copiar Ruta de Descarga
+                            </button>
+                        </div>
+
+                        <div class="copy-path-box">
+                            <span class="copy-label">Ruta Oficial / ID:</span>
+                            <input type="text" readonly value="https://play.google.com/store/apps/details?id=com.minegociomovil.app" class="copy-input" id="path-input-negocio">
+                            <button type="button" class="btn-copy-icon" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.minegociomovil.app', 'Ruta copiada')" title="Copiar ruta">
+                                📋 Copiar
+                            </button>
+                        </div>
+                    </div>
+
                     <p><strong>1. Identificación del Desarrollador y Alcance:</strong> Las presentes Políticas de Privacidad y Términos de Uso regulan el uso de la aplicación móvil para Android "Mi Negocio Móvil", creada, desarrollada y operada por <strong>MontyTech - CMTech</strong> (en adelante, "la Empresa", "nosotros" o "el Desarrollador"). Al descargar, instalar o utilizar esta aplicación, el usuario acepta de manera expresa y sin reservas los términos aquí estipulados.</p>
+
 
                     <p><strong>2. Almacenamiento Local y Arquitectura Offline:</strong> La aplicación "Mi Negocio Móvil" está diseñada bajo una arquitectura principalmente <em>offline-first</em>. Toda la información ingresada (inventarios, ventas, clientes, registros y configuraciones) se almacena únicamente de manera local en el almacenamiento interno del dispositivo del usuario utilizando bases de datos optimizadas.</p>
                     
@@ -53,6 +79,8 @@
             <p>&copy; 2026 MontyTech - CMTech. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../js/apps.js"></script>
     <script src="../js/main.js"></script>
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Políticas de Privacidad & Términos Legal | MontyTech - CMTech</title>
+    <title>Políticas de Privacidad & Descarga de Apps | MontyTech - CMTech</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,25 +19,12 @@
 
     <main class="page-content section-padding">
         <div class="section-title fade-in">
-            <h1>Políticas de Privacidad de <span class="highlight">Nuestras Apps Android</span></h1>
-            <p>Protección de datos, términos legales y transparencia en cada aplicación desarrollada por <strong>MontyTech - CMTech</strong>.</p>
+            <h1>Políticas de Privacidad & <span class="highlight">Descarga de Apps</span></h1>
+            <p>Descarga nuestras aplicaciones oficiales para Android, copia las rutas directas de publicación y conoce nuestras políticas de privacidad y protección legal.</p>
         </div>
 
-        <div class="policy-grid">
-            <a href="politicas/poker-local.html" class="policy-card glass-card slide-up" style="display: block; text-decoration: none; color: inherit;">
-                <span class="policy-badge badge-legal">♠️ Juego & Criptografía</span>
-                <h2>🃏 Poker Local</h2>
-                <div class="policy-meta">Términos de Privacidad, Uso de Moneda Virtual, Cifrado SRA y Limitación de Responsabilidad Legal</div>
-                <p style="font-size: 0.95rem; color: var(--text-muted);">Políticas de privacidad para Texas Hold'em Poker en Android. Protección de datos de red LAN, Google AdMob, exención de apuestas y derechos de modificación empresarial.</p>
-            </a>
-
-            <a href="politicas/mi-negocio-movil.html" class="policy-card glass-card slide-up" style="display: block; text-decoration: none; color: inherit;">
-                <span class="policy-badge badge-android">📱 Productividad & P2P</span>
-                <h2>📱 Mi Negocio Móvil</h2>
-                <div class="policy-meta">Políticas de Privacidad, Almacenamiento Local Offline y Sincronización P2P</div>
-                <p style="font-size: 0.95rem; color: var(--text-muted);">Políticas de privacidad para la suite de gestión empresarial en Android. Tratamiento local de datos, reportes y sincronización en red local.</p>
-            </a>
-        </div>
+        <!-- Contenedor dinámico de tarjetas de apps con descargas y copia de ruta -->
+        <div id="apps-container" class="policy-grid"></div>
     </main>
 
     <footer class="footer glass">
@@ -45,9 +32,17 @@
             <p>&copy; 2026 MontyTech - CMTech. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Scripts de configuración dinámica -->
+    <script src="js/apps.js"></script>
     <script src="js/socials.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof renderAppCards === 'function') {
+                renderAppCards('#apps-container');
+            }
+        });
+    </script>
 </body>
-
 </html>
-
