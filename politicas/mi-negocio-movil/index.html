@@ -20,24 +20,29 @@
 
     <main class="page-content section-padding">
         <div class="section-title fade-in">
-            <span class="policy-badge badge-android"><i class="fa-brands fa-android"></i> Aplicación para Android</span>
-            <h1>Políticas de Privacidad: <span class="highlight">Mi Negocio Móvil</span></h1>
-            <p>Conoce cómo manejamos y protegemos la información en nuestra aplicación móvil desarrollada por el equipo independiente de <strong>MontyTech - CMTech (Startup)</strong>.</p>
+            <span class="policy-badge badge-legal"><i class="fa-solid fa-store"></i> Aplicación Oficial para Android</span>
+            <h1>Políticas de Privacidad y Términos Legales: <span class="highlight">Mi Negocio Móvil</span></h1>
+            <p>Términos de uso, protección de datos, exención de responsabilidad y derechos de modificación del proyecto <strong>MontyTech - CMTech (Startup & Desarrollo Independiente)</strong>.</p>
         </div>
 
         <div class="policies-list">
             <article class="policy-card glass-card slide-up">
-                <div class="policy-meta">Última actualización: Octubre 2026 • Versión Oficial de la Política</div>
+                <div class="policy-meta">Última actualización: Octubre 2026 • Versión Oficial Vigente (Android)</div>
                 <div class="policy-text">
+                    
+                    <div class="legal-callout success">
+                        <strong><i class="fa-solid fa-circle-check"></i> Resumen Ejecutivo de Transparencia:</strong> Mi Negocio Móvil es una aplicación de gestión comercial y control de ventas para Android. Creada por el equipo de desarrollo independiente de MontyTech - CMTech, no requiere registro en la nube, almacena tus datos comercialmente de forma 100% local en tu dispositivo y permite sincronización en equipo mediante red Wi-Fi local (P2P).
+                    </div>
+
                     <!-- Caja de Descarga de App y Copiar Ruta -->
                     <div class="legal-callout" style="border-left-color: var(--secondary); background: rgba(0, 229, 255, 0.08); margin-bottom: 1.5rem;">
                         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
                             <strong style="color: #fff; font-size: 1.05rem;"><i class="fa-brands fa-android"></i> Descargar Aplicación Oficial (Mi Negocio Móvil):</strong>
-                            <span class="app-version-tag">Versión 1.0.0 (Build 1)</span>
+                            <span class="app-version-tag" id="app-version-display">Versión 1.0.0 (Build 1)</span>
                         </div>
                         
                         <div class="app-actions-group" style="margin-top: 0.5rem; margin-bottom: 0.8rem;">
-                            <a href="https://play.google.com/store/apps/details?id=com.minegociomovil.app" target="_blank" rel="noopener" class="btn-primary-sm">
+                            <a href="https://play.google.com/store/apps/details?id=com.minegociomovil.app" target="_blank" rel="noopener" class="btn-primary-sm" id="btn-playstore-link">
                                 <i class="fa-brands fa-google-play"></i> Descargar en Google Play
                             </a>
                             <button type="button" class="btn-secondary-sm" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.minegociomovil.app', 'Ruta de Mi Negocio Móvil copiada')">
@@ -54,21 +59,67 @@
                         </div>
                     </div>
 
-                    <p><strong><i class="fa-solid fa-shield-halved"></i> 1. Identificación del Desarrollador y Alcance:</strong> Las presentes Políticas de Privacidad y Términos de Uso regulan el uso de la aplicación móvil para Android "Mi Negocio Móvil", creada, desarrollada y operada por <strong>MontyTech - CMTech</strong> (en adelante, "el Desarrollador" o "el Equipo de Desarrollo"), un proyecto tecnológico independiente y startup de desarrollo de software. Al descargar, instalar o utilizar esta aplicación, el usuario acepta de manera expresa y sin reservas los términos aquí estipulados.</p>
+                    <h2 class="policy-section-title"><i class="fa-solid fa-shield-halved"></i> 1. Identificación del Desarrollador y Naturaleza del Proyecto</h2>
+                    <p>Las presentes Políticas de Privacidad, Avisos Legales y Términos de Uso (en adelante, "los Términos") rigen el acceso, descarga, instalación y uso de la aplicación móvil para Android denominada <strong>Mi Negocio Móvil</strong> (en adelante, "la Aplicación"), creada y operada por <strong>MontyTech - CMTech</strong> (en adelante, "el Desarrollador" o "el Equipo de Desarrollo"), un proyecto tecnológico independiente y startup de desarrollo de software liderado por sus desarrolladores fundadores y colaboradores técnicos.</p>
+                    <p>Al descargar, instalar o utilizar la Aplicación, el usuario (en adelante, "el Usuario") declara ser mayor de edad en su jurisdicción correspondiente y acepta de manera expresa, voluntaria, incondicional e irrevocable la totalidad de las cláusulas contenidas en este documento legal.</p>
 
-                    <p><strong><i class="fa-solid fa-database"></i> 2. Almacenamiento Local y Arquitectura Offline:</strong> La aplicación "Mi Negocio Móvil" está diseñada bajo una arquitectura principalmente <em>offline-first</em>. Toda la información ingresada (inventarios, ventas, clientes, registros y configuraciones) se almacena únicamente de manera local en el almacenamiento interno del dispositivo del usuario utilizando bases de datos optimizadas.</p>
-                    
-                    <p><strong><i class="fa-solid fa-network-wired"></i> 3. Sincronización Peer-to-Peer (P2P):</strong> La sincronización de información entre diferentes dispositivos (modo Colaborativo Host-Cliente) ocurre única y exclusivamente a través de la red local (Hotspot Wi-Fi o router local) generada por el usuario. Nosotros <strong>no almacenamos, interceptamos ni transferimos</strong> ningún dato a servidores externos ni bases de datos en la nube durante la sincronización.</p>
+                    <h2 class="policy-section-title"><i class="fa-solid fa-database"></i> 2. Tratamiento de Datos, Almacenamiento Local y Arquitectura Offline</h2>
+                    <p>En <strong>MontyTech - CMTech</strong> priorizamos la privacidad absoluta de la información comercial de los usuarios mediante una arquitectura <em>Offline-First</em>:</p>
+                    <ul>
+                        <li><strong>Persistencia Local Segura:</strong> Toda la información ingresada (inventarios, registro de ventas, catálogo de productos, datos de clientes, comprobantes y configuraciones) se almacena exclusivamente en el almacenamiento interno del dispositivo del usuario.</li>
+                        <li><strong>Cero Rastreo de Ventas:</strong> El Equipo de Desarrollo no recopila, no monitorea, ni transfiere datos comerciales o financieros a servidores externos en la nube.</li>
+                    </ul>
 
-                    <p><strong><i class="fa-solid fa-camera"></i> 4. Uso de la Cámara y Permisos:</strong> La aplicación solicita permisos de acceso a la cámara exclusivamente para dos funciones internas: (a) Escanear códigos QR seguros para conectar dispositivos a la red P2P local del Host, y (b) adjuntar imágenes directamente a comprobantes y registros. Ninguna imagen es enviada a servidores de la empresa.</p>
-                    
-                    <p><strong><i class="fa-solid fa-file-export"></i> 5. Exportación y Manejo de Archivos:</strong> Para generar reportes detallados y comprobantes de reserva en archivos PDF o planillas Excel, la aplicación requerirá accesos de escritura y lectura al almacenamiento del dispositivo. Las funciones de respaldo y restauración operan de forma local para garantizar la portabilidad y seguridad bajo control directo del usuario.</p>
+                    <h2 class="policy-section-title"><i class="fa-solid fa-network-wired"></i> 3. Sincronización Peer-to-Peer (P2P) y Redes LAN</h2>
+                    <p>La sincronización de información entre diferentes dispositivos en salas de trabajo colaborativo opera sobre red local:</p>
+                    <ul>
+                        <li><strong>Conexión Wi-Fi Local:</strong> La sincronización ocurre única y exclusivamente a través de la red Wi-Fi local o punto de acceso (Hotspot) creado por el Host.</li>
+                        <li><strong>Sin Intermediación en la Nube:</strong> Ningún dato comercial o transaccional se envía a servidores externos durante la sincronización entre dispositivos.</li>
+                    </ul>
 
-                    <p><strong><i class="fa-solid fa-ad"></i> 6. Publicidad de Terceros (Google AdMob):</strong> La aplicación puede incluir integración no intrusiva de anuncios proveídos por Google AdMob. Estos proveedores externos pueden recolectar de manera anónima y limitada métricas de rendimiento según sus propias políticas de privacidad. El Equipo de Desarrollo no transfiere inventarios ni datos personales a redes de anuncios.</p>
-                    
-                    <p><strong><i class="fa-solid fa-pen-to-square"></i> 7. Reserva de Derechos de Modificación y Evolución del Proyecto:</strong> El Equipo de Desarrolladores de <strong>MontyTech - CMTech</strong> se reserva de manera expresa e ilimitada el derecho de realizar cualquier modificación, actualización, optimización, adición o eliminación de funcionalidades, cambios en la interfaz, ajustes de rendimiento o revisión de los términos de uso en cualquier momento, sin necesidad de notificación previa. Estas modificaciones se realizarán en beneficio de la evolución del software, la seguridad y la estrategia comercial del proyecto.</p>
+                    <h2 class="policy-section-title"><i class="fa-solid fa-camera"></i> 4. Uso de la Cámara y Permisos del Dispositivo</h2>
+                    <p>La Aplicación solicita permisos de acceso a la cámara exclusivamente para las siguientes funciones internas:</p>
+                    <ul>
+                        <li><strong>Escaneo de Códigos QR:</strong> Para vincular dispositivos clientes al dispositivo Host en la red local de manera rápida.</li>
+                        <li><strong>Adjunto de Fotos y Comprobantes:</strong> Para asociar fotografías de productos o comprobantes directamente en los registros locales. La Aplicación no graba, transmite ni almacena imágenes fuera del dispositivo.</li>
+                    </ul>
 
-                    <p><strong><i class="fa-solid fa-scale-balanced"></i> 8. Limitación General de Responsabilidad Legal e Individual:</strong> En la máxima medida permitida por las leyes aplicables, los desarrolladores fundadores de <strong>MontyTech - CMTech</strong>, sus colaboradores técnicos y el equipo del proyecto quedan exonerados a título personal e individual de cualquier responsabilidad legal, civil, penal o comercial ante pérdidas de información local, fallas de hardware en el dispositivo del usuario, interrupciones de red Wi-Fi local o uso indebido de los datos del negocio por parte de terceros. La gestión de copias de seguridad de la base de datos es responsabilidad exclusiva del usuario.</p>
+                    <h2 class="policy-section-title"><i class="fa-solid fa-file-export"></i> 5. Exportación, Comprobantes y Manejo de Archivos</h2>
+                    <p>Para generar reportes comerciales detallados, comprobantes o planillas de inventario en archivos PDF o Excel:</p>
+                    <ul>
+                        <li>La Aplicación requerirá permisos de lectura y escritura en el almacenamiento local del dispositivo.</li>
+                        <li>Las funciones de respaldo (backup) y restauración operan de forma local para garantizar la portabilidad bajo el control directo del Usuario.</li>
+                    </ul>
+
+                    <h2 class="policy-section-title"><i class="fa-solid fa-ad"></i> 6. Servicios de Terceros y Anuncios (Google AdMob)</h2>
+                    <p>La Aplicación integra servicios publicitarios oficiales de Google Mobile Ads (AdMob) para apoyar el sostenimiento del software:</p>
+                    <ul>
+                        <li>Google AdMob puede recopilar de manera anónima identificadores publicitarios del dispositivo (AAID), dirección IP aproximada y métricas de interacción conforme a las <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--secondary); text-decoration: underline;">Políticas de Privacidad de Google</a>.</li>
+                        <li>El Equipo de Desarrollo no vende, comercializa ni comparte información personal o comercial de los usuarios con anunciantes o terceros.</li>
+                    </ul>
+
+                    <h2 class="policy-section-title"><i class="fa-solid fa-pen-to-square"></i> 7. Derechos Reservados de Modificación y Evolución del Proyecto</h2>
+                    <p>El Equipo de Desarrolladores de <strong>MontyTech - CMTech</strong> se reserva en todo momento el derecho exclusivo, perpetuo, incondicional y discrecional de realizar cualquier tipo de modificación o ajuste en la Aplicación para el beneficio estratégico del proyecto, incluyendo pero no limitándose a:</p>
+                    <ul>
+                        <li>Actualizar, reemplazar, alterar, agregar o eliminar cualquier funcionalidad, módulo comercial, interfaz gráfica o diseño de reportes sin previo aviso.</li>
+                        <li>Implementar nuevas funciones avanzadas, suscripciones o modelos de servicios integrados conforme a la evolución de la startup.</li>
+                        <li>Revisar, actualizar o sustituir las presentes Políticas de Privacidad y Términos de Uso en cualquier momento. La continuación en el uso de la Aplicación constituye la aceptación implícita de las modificaciones.</li>
+                    </ul>
+
+                    <h2 class="policy-section-title"><i class="fa-solid fa-scale-balanced"></i> 8. Exención y Limitación General de Responsabilidad Legal e Individual</h2>
+                    <p>En la máxima medida permitida por las leyes aplicables en cualquier jurisdicción:</p>
+                    <ul>
+                        <li><strong>Prestación "TAL CUAL" (AS IS):</strong> La Aplicación se proporciona "tal cual" y "según disponibilidad", sin garantías explícitas o implícitas de funcionamiento ininterrumpido o ausencia de errores.</li>
+                        <li><strong>Exoneración Total a Título Personal e Individual:</strong> Los desarrolladores fundadores de <strong>MontyTech - CMTech</strong>, sus colaboradores técnicos y el equipo del proyecto quedan completamente exentos e indemnes a título personal e individual de cualquier responsabilidad civil, penal, laboral, tributaria o comercial por pérdida de datos locales, fallas de hardware en el dispositivo, interrupciones de red Wi-Fi local o uso inadecuado por parte del Usuario. La custodia y creación de copias de seguridad de la base de datos es responsabilidad exclusiva del Usuario.</li>
+                        <li><strong>Cláusula de Indemnización:</strong> El Usuario se compromete a defender, indemnizar y mantener indemne al Equipo de Desarrollo ante cualquier reclamo, demanda o sanción de terceros derivada del incumplimiento de estos Términos por parte del Usuario.</li>
+                    </ul>
+
+                    <h2 class="policy-section-title"><i class="fa-solid fa-copyright"></i> 9. Propiedad Intelectual</h2>
+                    <p>Todos los derechos de propiedad intelectual, marcas, nombres comerciales ("MontyTech - CMTech", "Mi Negocio Móvil"), código fuente, arquitectura de software, diseños de interfaz y componentes gráficos pertenecen exclusivamente a sus desarrolladores creadores. Queda prohibida la ingeniería inversa, descompilación, copia o redistribución no autorizada de los ejecutables de la Aplicación.</p>
+
+                    <h2 class="policy-section-title"><i class="fa-solid fa-envelope"></i> 10. Contacto Oficial y Soporte</h2>
+                    <p>Para cualquier consulta relacionada con la Aplicación, los usuarios pueden comunicarse con el equipo de desarrollo a través de nuestros canales oficiales en <a href="../../index.html" style="color: var(--secondary); text-decoration: underline;">MontyTech - CMTech Portal</a>.</p>
+
                 </div>
             </article>
         </div>
