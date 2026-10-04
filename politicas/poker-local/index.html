@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Políticas de Privacidad y Términos de Uso - Poker Local | MontyTech - CMTech</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <nav class="navbar glass">
         <div class="logo">MontyTech<span class="highlight"> - CMTech</span></div>
         <ul class="nav-links">
-            <li><a href="../politicas.html">← Volver al Listado de Apps</a></li>
+            <li><a href="../../politicas.html">← Volver al Listado de Apps</a></li>
         </ul>
     </nav>
 
@@ -37,11 +37,11 @@
                     <div class="legal-callout" style="border-left-color: var(--primary); background: rgba(138, 43, 226, 0.1);">
                         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
                             <strong style="color: #fff; font-size: 1.05rem;">📲 Descargar Aplicación Oficial (Poker Local):</strong>
-                            <span class="app-version-tag">Versión 1.0.2 (Build 3)</span>
+                            <span class="app-version-tag" id="app-version-display">Versión 1.0.2 (Build 3)</span>
                         </div>
                         
                         <div class="app-actions-group" style="margin-top: 0.5rem; margin-bottom: 0.8rem;">
-                            <a href="https://play.google.com/store/apps/details?id=com.pokerlocal.app" target="_blank" rel="noopener" class="btn-primary-sm">
+                            <a href="https://play.google.com/store/apps/details?id=com.pokerlocal.app" target="_blank" rel="noopener" class="btn-primary-sm" id="btn-playstore-link">
                                 📱 Descargar en Google Play
                             </a>
                             <button type="button" class="btn-secondary-sm" onclick="copyToClipboard('https://play.google.com/store/apps/details?id=com.pokerlocal.app', 'Ruta de Poker Local copiada')">
@@ -58,7 +58,6 @@
                         </div>
                     </div>
 
-
                     <h2 class="policy-section-title">1. Identificación del Desarrollador y Aceptación de Términos</h2>
                     <p>Las presentes Políticas de Privacidad, Avisos Legales y Términos de Uso (en adelante, "los Términos") rigen el acceso, descarga, instalación y uso de la aplicación móvil para Android denominada <strong>Poker Local — Texas Hold'em</strong> (en adelante, "la Aplicación"), creada, desarrollada, de propiedad exclusiva y operada por <strong>MontyTech - CMTech</strong>, junto a sus desarrolladores fundadores y equipo técnico (en adelante, "la Empresa", "nosotros" o "el Desarrollador").</p>
                     <p>Al descargar, instalar o utilizar la Aplicación, el usuario (en adelante, "el Usuario") declara ser mayor de edad en su jurisdicción correspondiente y acepta de manera expresa, voluntaria, incondicional e irrevocable la totalidad de las cláusulas contenidas en este documento legal.</p>
@@ -70,7 +69,7 @@
                     <ul>
                         <li><strong>Cero Valor Monetario:</strong> Todas las fichas, monedas virtuales, recompensas de nivel, saldo de billetera interna y botes ganados en la Aplicación son ítems digitales de ficción sin valor comercial o financiero en el mundo real.</li>
                         <li><strong>Prohibición de Canje o Transferencia:</strong> La moneda virtual no es canjeable, reembolsable, transferible ni redimible por dinero en efectivo, bienes, servicios o cualquier otro valor económico.</li>
-                        <li><strong>Prohibición de Apuestas Reales:</strong> Está strictly prohibido utilizar la Aplicación para facilitar apuestas clandestinas, juegos de azar con dinero real o transacciones financieras entre jugadores. <strong>MontyTech - CMTech</strong> no procesa depósitos de dinero real ni pagos de premios económicos.</li>
+                        <li><strong>Prohibición de Apuestas Reales:</strong> Está estrictamente prohibido utilizar la Aplicación para facilitar apuestas clandestinas, juegos de azar con dinero real o transacciones financieras entre jugadores. <strong>MontyTech - CMTech</strong> no procesa depósitos de dinero real ni pagos de premios económicos.</li>
                     </ul>
 
                     <h2 class="policy-section-title">3. Seguridad Criptográfica y Transparencia en el Juego</h2>
@@ -116,7 +115,7 @@
                     <p>Todos los derechos de propiedad intelectual, marcas registradas, logotipos, nombres comerciales ("MontyTech - CMTech", "Poker Local"), código fuente, arquitectura de software, diseños de interfaz, animaciones y componentes gráficos son propiedad exclusiva de <strong>MontyTech - CMTech</strong>. Queda prohibida la ingeniería inversa, descompilación, copia o redistribución no autorizada de los ejecutables de la Aplicación.</p>
 
                     <h2 class="policy-section-title">9. Contacto Oficial y Soporte</h2>
-                    <p>Para cualquier consulta legal o técnica relacionada con la Aplicación, los usuarios pueden comunicarse con el equipo de desarrollo a través de nuestros canales oficiales en <a href="../index.html" style="color: var(--secondary); text-decoration: underline;">MontyTech - CMTech Portal</a>.</p>
+                    <p>Para cualquier consulta legal o técnica relacionada con la Aplicación, los usuarios pueden comunicarse con el equipo de desarrollo a través de nuestros canales oficiales en <a href="../../index.html" style="color: var(--secondary); text-decoration: underline;">MontyTech - CMTech Portal</a>.</p>
 
                 </div>
             </article>
@@ -128,8 +127,10 @@
             <p>&copy; 2026 MontyTech - CMTech. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="../js/apps.js"></script>
-    <script src="../js/main.js"></script>
-</body>
 
+    <!-- Carga de scripts modular por app -->
+    <script src="./config.js"></script>
+    <script src="../../js/apps.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
 </html>

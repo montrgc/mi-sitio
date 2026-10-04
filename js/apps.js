@@ -13,7 +13,7 @@ const APPS_CONFIG = [
         version: 'Versión 1.0.2 (Build 3)',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.pokerlocal.app',
         directApkUrl: 'https://montytech.com/downloads/poker-local.apk',
-        policyUrl: 'politicas/poker-local.html',
+        policyUrl: 'politicas/poker-local/index.html',
         description: 'Juego de póquer Texas Hold\'em para Android con modo Historia vs IA y multijugador LAN sin servidores externos.'
     },
     {
@@ -25,7 +25,8 @@ const APPS_CONFIG = [
         version: 'Versión 1.0.0 (Build 1)',
         playStoreUrl: 'https://play.google.com/store/apps/details?id=com.minegociomovil.app',
         directApkUrl: 'https://montytech.com/downloads/mi-negocio-movil.apk',
-        policyUrl: 'politicas/mi-negocio-movil.html',
+        policyUrl: 'politicas/mi-negocio-movil/index.html',
+
         description: 'Suite de gestión comercial y ventas offline-first con sincronización P2P en red local.'
     }
 ];

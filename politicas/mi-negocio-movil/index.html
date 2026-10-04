@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Políticas de Privacidad - Mi Negocio Móvil | MontyTech - CMTech</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <nav class="navbar glass">
         <div class="logo">MontyTech<span class="highlight"> - CMTech</span></div>
         <ul class="nav-links">
-            <li><a href="../politicas.html">← Volver al Listado de Apps</a></li>
+            <li><a href="../../politicas.html">← Volver al Listado de Apps</a></li>
         </ul>
     </nav>
 
@@ -55,7 +55,6 @@
 
                     <p><strong>1. Identificación del Desarrollador y Alcance:</strong> Las presentes Políticas de Privacidad y Términos de Uso regulan el uso de la aplicación móvil para Android "Mi Negocio Móvil", creada, desarrollada y operada por <strong>MontyTech - CMTech</strong> (en adelante, "la Empresa", "nosotros" o "el Desarrollador"). Al descargar, instalar o utilizar esta aplicación, el usuario acepta de manera expresa y sin reservas los términos aquí estipulados.</p>
 
-
                     <p><strong>2. Almacenamiento Local y Arquitectura Offline:</strong> La aplicación "Mi Negocio Móvil" está diseñada bajo una arquitectura principalmente <em>offline-first</em>. Toda la información ingresada (inventarios, ventas, clientes, registros y configuraciones) se almacena únicamente de manera local en el almacenamiento interno del dispositivo del usuario utilizando bases de datos optimizadas.</p>
                     
                     <p><strong>3. Sincronización Peer-to-Peer (P2P):</strong> La sincronización de información entre diferentes dispositivos (modo Colaborativo Host-Cliente) ocurre única y exclusivamente a través de la red local (Hotspot Wi-Fi o router local) generada por el usuario. Nosotros <strong>no almacenamos, interceptamos ni transferimos</strong> ningún dato a servidores externos ni bases de datos en la nube durante la sincronización.</p>
@@ -79,8 +78,10 @@
             <p>&copy; 2026 MontyTech - CMTech. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="../js/apps.js"></script>
-    <script src="../js/main.js"></script>
-</body>
 
+    <!-- Carga de scripts modular por app -->
+    <script src="./config.js"></script>
+    <script src="../../js/apps.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
 </html>
