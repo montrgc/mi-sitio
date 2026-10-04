@@ -401,3 +401,75 @@ ul {
         gap: 1.5rem;
     }
 }
+
+/* Legal & Policy Styling Enhancements */
+.policy-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.badge-android {
+    background: rgba(0, 229, 255, 0.15);
+    color: var(--secondary);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+.badge-legal {
+    background: rgba(138, 43, 226, 0.2);
+    color: #c084fc;
+    border: 1px solid rgba(192, 132, 252, 0.4);
+}
+
+.legal-callout {
+    background: rgba(25, 25, 35, 0.8);
+    border-left: 4px solid var(--secondary);
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.legal-callout.warning {
+    border-left-color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.legal-callout.success {
+    border-left-color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.policy-section-title {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.5rem;
+}
+
+.policy-text ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgba(224, 224, 224, 0.85);
+}
+
+.policy-text li {
+    margin-bottom: 0.5rem;
+}
+
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
