@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Render dynamic social media networks if helper function exists
+    if (typeof renderSocialNetworks === 'function') {
+        renderSocialNetworks('#social-container');
+    }
+
     // Menu mobile toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -39,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 e.preventDefault();
-                navLinks.classList.remove('active'); // Close mobile menu if open
+                if (navLinks) navLinks.classList.remove('active'); // Close mobile menu if open
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'

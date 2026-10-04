@@ -21,8 +21,8 @@
         <ul class="nav-links">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
+            <li><a href="#contact">Contacto & Redes</a></li>
             <li><a href="politicas.html">Políticas de Apps</a></li>
-            <li><a href="#contact" class="btn-primary-sm">Contacto</a></li>
         </ul>
     </nav>
 
@@ -34,7 +34,7 @@
             <p>En <strong>MontyTech - CMTech</strong> creamos experiencias digitales únicas, aplicaciones móviles nativas para Android potenciadas con Inteligencia Artificial (IA) y soluciones web avanzadas.</p>
             <div class="hero-actions">
                 <a href="#services" class="btn-primary">Descubre nuestros servicios</a>
-                <a href="politicas.html" class="btn-secondary">Políticas de Privacidad</a>
+                <a href="#contact" class="btn-secondary">Nuestras Redes Sociales</a>
             </div>
         </div>
     </header>
@@ -63,11 +63,23 @@
         </div>
     </section>
 
-    <footer class="footer glass" id="contact">
+    <!-- Sección Dinámica de Contacto y Redes Sociales -->
+    <section id="contact" class="contact section-padding">
+        <div class="section-title fade-in">
+            <h2>Nuestras <span class="highlight">Redes Sociales Oficiales</span></h2>
+            <p>Conéctate con el equipo de <strong>MontyTech - CMTech</strong> a través de nuestros canales oficiales.</p>
+        </div>
+        
+        <!-- Contenedor dinámico renderizado por js/socials.js -->
+        <div id="social-container" class="social-grid"></div>
+    </section>
+
+    <footer class="footer glass">
         <div class="footer-content">
             <div class="footer-logo">MontyTech<span> - CMTech</span></div>
             <ul class="footer-links">
                 <li><a href="#home">Inicio</a></li>
+                <li><a href="#contact">Contacto</a></li>
                 <li><a href="politicas.html">Políticas de Privacidad</a></li>
             </ul>
         </div>
@@ -76,6 +88,8 @@
         </div>
     </footer>
 
+    <!-- Scripts de configuración dinámica y eventos -->
+    <script src="js/socials.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
