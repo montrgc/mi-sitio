@@ -26,6 +26,18 @@ const APPS_CONFIG = [
         directApkUrl: 'https://montytech.com/downloads/mi-negocio-movil.apk',
         policyUrl: 'politicas/mi-negocio-movil/index.html',
         description: 'Suite de gestión comercial y ventas offline-first con sincronización P2P en red local.'
+    },
+    {
+        id: 'zona-guerra',
+        title: 'Zona de Guerra — Estrategia Táctica',
+        category: 'Juegos & Estrategia (Android)',
+        badge: '<i class="fa-solid fa-crosshairs"></i> Estrategia & Multijugador LAN',
+        badgeClass: 'badge-legal',
+        version: 'Versión 1.0.0 (Build 1)',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.montytech.zonadeguerra',
+        directApkUrl: 'https://montytech.com/downloads/zona-de-guerra.apk',
+        policyUrl: 'politicas/zona-guerra/index.html',
+        description: 'Juego de estrategia táctica militar matricial por turnos en 20x20 con campaña de 30 niveles vs IA y multijugador LAN offline.'
     }
 ];
 
