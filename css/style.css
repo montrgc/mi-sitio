@@ -343,6 +343,8 @@ ul {
 }
 
 .slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
     animation: fadeInUp 0.8s ease forwards;
 }
 
