@@ -72,12 +72,11 @@
                         <li><strong>Inexistencia de Apuestas Financieras:</strong> Los sistemas de apuestas en el modo Historia o salas LAN sirven únicamente como cuota de participación y progreso táctico dentro de la mecánica de juego. Ningún ítem ni saldo puede ser canjeado o canjeable por dinero real.</li>
                     </ul>
 
-                    <h2 class="policy-section-title"><i class="fa-solid fa-database"></i> 3. Arquitectura Offline-First, Almacenamiento Local y Redes LAN</h2>
-                    <p>En <strong>MontyTech - CMTech</strong> priorizamos la privacidad absoluta de los usuarios mediante una arquitectura <em>Offline-First</em> sustentada en las siguientes invariantes:</p>
+                    <h2 class="policy-section-title"><i class="fa-solid fa-database"></i> 3. Arquitectura Offline y Almacenamiento Local</h2>
+                    <p>En <strong>MontyTech - CMTech</strong> priorizamos la privacidad de los usuarios mediante las siguientes garantías:</p>
                     <ul>
-                        <li><strong>Persistencia Local Segura:</strong> El perfil del jugador, inventario de armas, progreso de la campaña de 30 niveles y estadísticas de combate se almacenan exclusivamente en la memoria local del dispositivo mediante almacenamiento encriptado JSON.</li>
-                        <li><strong>Multijugador LAN Peer-to-Peer (P2P):</strong> El modo multijugador opera mediante sockets TCP/UDP autoritativos conectados directamente sobre la red Wi-Fi local o punto de acceso (Hotspot) entre los dispositivos participantes. No se transmiten datos de la partida a servidores centrales en la nube.</li>
-                        <li><strong>Acceso a Cámara para Escáner QR:</strong> El permiso de acceso a la cámara se utiliza estrictamente en tiempo real para el escaneo del código QR emitido por el Host al unirse a una sala LAN. La Aplicación no captura, graba, procesa ni almacena imágenes ni video.</li>
+                        <li><strong>Persistencia Local Segura:</strong> El perfil del jugador, inventario de armas, progreso de la campaña y estadísticas de combate se almacenan exclusivamente en la memoria local del dispositivo.</li>
+                        <li><strong>Multijugador en Red Local (LAN):</strong> El modo multijugador opera directamente sobre la red Wi-Fi local o punto de acceso entre los dispositivos participantes. No se transmiten datos de la partida a servidores en la nube.</li>
                     </ul>
 
                     <h2 class="policy-section-title"><i class="fa-solid fa-ad"></i> 4. Servicios de Terceros y Anuncios (Google AdMob)</h2>
@@ -87,12 +86,11 @@
                         <li>El Equipo de Desarrollo no vende, comercializa ni comparte datos personales con anunciantes o terceros.</li>
                     </ul>
 
-                    <h2 class="policy-section-title"><i class="fa-solid fa-list-check"></i> 5. Permisos Solicitados en Android y Justificación Técnica</h2>
+                    <h2 class="policy-section-title"><i class="fa-solid fa-list-check"></i> 5. Permisos Solicitados</h2>
+                    <p>La Aplicación solicita únicamente los permisos indispensables para su correcto funcionamiento:</p>
                     <ul>
-                        <li><code>INTERNET</code> & <code>ACCESS_NETWORK_STATE</code>: Requeridos para la carga de anuncios publicitarios AdMob.</li>
-                        <li><code>ACCESS_WIFI_STATE</code> & <code>CHANGE_WIFI_MULTICAST_STATE</code>: Requeridos para el descubrimiento automático de salas en red local mediante UDP Broadcast (Puerto 4545).</li>
-                        <li><code>com.google.android.gms.permission.AD_ID</code>: Requerido en Android 13+ (API 33+) para el funcionamiento conforme a políticas de la API publicitaria de Google.</li>
-                        <li><code>CAMERA</code>: Requerido únicamente para escanear el código QR de unión rápida en salas LAN.</li>
+                        <li><strong>Acceso a Red e Internet:</strong> Requerido para la carga de anuncios publicitarios y la conexión entre dispositivos en la red Wi-Fi local.</li>
+                        <li><strong>Cámara:</strong> Requerido exclusivamente para el escaneo del código QR al unirse a una partida multijugador.</li>
                     </ul>
 
                     <h2 class="policy-section-title"><i class="fa-solid fa-pen-to-square"></i> 6. Derechos Reservados de Modificación y Evolución del Proyecto</h2>
