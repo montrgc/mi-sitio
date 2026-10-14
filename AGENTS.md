@@ -31,6 +31,9 @@ tonimontech-landing/
 │   ├── main.js                       ← Lógica de interacción y animaciones de entrada
 │   └── socials.js                    ← Enlaces institucionales a redes sociales
 └── politicas/                        ← Módulos independientes por aplicación
+    ├── loba-local/
+    │   ├── config.js                 ← Variables de configuración de Loba Local Casino
+    │   └── index.html                ← Políticas de privacidad de Loba Local Casino
     ├── mi-negocio-movil/
     │   ├── config.js                 ← Variables de configuración de Mi Negocio Móvil
     │   └── index.html                ← Políticas de privacidad de Mi Negocio Móvil
@@ -51,6 +54,7 @@ tonimontech-landing/
 | `poker-local` | **Poker Local — Texas Hold'em** | Juegos & Entretenimiento | `com.pokerlocal.app` | `politicas/poker-local/index.html` |
 | `mi-negocio-movil` | **Mi Negocio Móvil** | Productividad & Gestión | `com.minegociomovil.app` | `politicas/mi-negocio-movil/index.html` |
 | `zona-guerra` | **Zona de Guerra — Estrategia Táctica** | Juegos & Estrategia | `com.montytech.zonadeguerra` | `politicas/zona-guerra/index.html` |
+| `loba-local` | **Loba Local Casino** | Juegos de Cartas & Casino Social | `com.montytech.lobalocal` | `politicas/loba-local/index.html` |
 
 ---
 

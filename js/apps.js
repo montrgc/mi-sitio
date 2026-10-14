@@ -38,6 +38,18 @@ const APPS_CONFIG = [
         directApkUrl: 'https://montytech.com/downloads/zona-de-guerra.apk',
         policyUrl: 'politicas/zona-guerra/index.html',
         description: 'Juego de estrategia táctica militar matricial por turnos en 20x20 con campaña de 30 niveles vs IA y multijugador LAN offline.'
+    },
+    {
+        id: 'loba-local',
+        title: 'Loba Local Casino',
+        category: 'Juegos de Cartas & Casino Social (Android)',
+        badge: '<i class="fa-solid fa-layer-group"></i> Naipes & Multijugador P2P',
+        badgeClass: 'badge-legal',
+        version: 'Versión 1.0.0 (Build 1)',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.montytech.lobalocal',
+        directApkUrl: 'https://montytech.com/downloads/loba-local.apk',
+        policyUrl: 'politicas/loba-local/index.html',
+        description: 'Juego de cartas tradicional La Loba con estética Stake Casino, modo Historia de 10 niveles progresivos vs IA y multijugador P2P local de 2 a 8 jugadores en Wi-Fi/Hotspot sin conexión a internet.'
     }
 ];
 
