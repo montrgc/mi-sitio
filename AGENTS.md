@@ -52,7 +52,7 @@ tonimontech-landing/
 | Identificador (`id`) | Aplicación | Categoría | ID de Paquete Android (`appId`) | URL de Políticas |
 |---|---|---|---|---|
 | `poker-local` | **Poker Local — Texas Hold'em** | Juegos & Entretenimiento | `com.pokerlocal.app` | `politicas/poker-local/index.html` |
-| `mi-negocio-movil` | **Mi Negocio Móvil** | Productividad & Gestión | `com.minegociomovil.app` | `politicas/mi-negocio-movil/index.html` |
+| `mi-negocio-movil` | **Mi Negocio Móvil** | Productividad & Gestión | `com.motytech.mi_negocio_movil` | `politicas/mi-negocio-movil/index.html` |
 | `zona-guerra` | **Zona de Guerra — Estrategia Táctica** | Juegos & Estrategia | `com.montytech.zonadeguerra` | `politicas/zona-guerra/index.html` |
 | `loba-local` | **Loba Local Casino** | Juegos de Cartas & Casino Social | `com.montytech.lobalocal` | `politicas/loba-local/index.html` |
 

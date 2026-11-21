@@ -6,15 +6,15 @@ const MI_NEGOCIO_MOVIL_CONFIG = {
     id: 'mi-negocio-movil',
     name: 'Mi Negocio Móvil',
     category: 'Productividad & Gestión (Android)',
-    badge: '<i class="fa-solid fa-mobile-screen-button"></i> Productividad & P2P',
+    badge: '<i class="fa-solid fa-mobile-screen-button"></i> POS, P2P & Drive Cifrado',
     badgeClass: 'badge-android',
-    version: 'Versión 1.0.0 (Build 1)',
-    targetSdk: 'API Level 35 (Android 15)',
-    appId: 'com.minegociomovil.app',
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.minegociomovil.app',
+    version: 'Versión 1.1.2 (Build 10)',
+    targetSdk: 'API Level 36 (Android 16)',
+    appId: 'com.motytech.mi_negocio_movil',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.motytech.mi_negocio_movil',
     directApkUrl: 'https://montytech.com/downloads/mi-negocio-movil.apk',
     policyPath: 'politicas/mi-negocio-movil/index.html',
-    description: 'Suite de gestión comercial y ventas offline-first con sincronización P2P en red local.',
+    description: 'POS, inventario, clientes, reservas e IA offline-first con sincronización P2P en red local y nube cifrada en Google Drive.',
     company: 'MontyTech - CMTech (Startup & Desarrollo Independiente)',
-    lastUpdated: 'Octubre 2026'
+    lastUpdated: 'Noviembre 2026'
 };

@@ -19,13 +19,13 @@ const APPS_CONFIG = [
         id: 'mi-negocio-movil',
         title: 'Mi Negocio Móvil',
         category: 'Productividad & Gestión (Android)',
-        badge: '<i class="fa-solid fa-mobile-screen-button"></i> Productividad & P2P',
+        badge: '<i class="fa-solid fa-mobile-screen-button"></i> POS, P2P & Drive Cifrado',
         badgeClass: 'badge-android',
-        version: 'Versión 1.0.0 (Build 1)',
-        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.minegociomovil.app',
+        version: 'Versión 1.1.2 (Build 10)',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.motytech.mi_negocio_movil',
         directApkUrl: 'https://montytech.com/downloads/mi-negocio-movil.apk',
         policyUrl: 'politicas/mi-negocio-movil/index.html',
-        description: 'Suite de gestión comercial y ventas offline-first con sincronización P2P en red local.'
+        description: 'POS, inventario, clientes, reservas e IA offline-first con sincronización P2P en red local y nube cifrada en Google Drive.'
     },
     {
         id: 'zona-guerra',
